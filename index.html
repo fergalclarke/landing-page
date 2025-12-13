@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MatchDay – Fixtures & TV Guide for Irish Fans</title>
+  <meta name="description" content="MatchDay is the fastest way for Irish sports fans to see today’s fixtures and where to watch them on TV or streaming." />
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      background: #f7faf8;
+      color: #222;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 40px;
+      background: #ffffff;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      margin-bottom: 12px;
+    }
+
+    header p {
+      max-width: 640px;
+      margin: 0 auto;
+      font-size: 1.05rem;
+      color: #4b5563;
+    }
+
+    .tagline-pill {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      background: #ecfdf3;
+      color: #15803d;
+    }
+
+    .cta-button {
+      margin-top: 26px;
+      display: inline-block;
+      padding: 14px 26px;
+      background: #15803d; /* green accent */
+      color: white;
+      text-decoration: none;
+      border-radius: 999px;
+      font-size: 1.05rem;
+      font-weight: 600;
+      box-shadow: 0 8px 18px rgba(21,128,61,0.25);
+      transition: transform 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
+    }
+
+    .cta-button:hover {
+      background: #166534;
+      transform: translateY(-1px);
+      box-shadow: 0 10px 22px rgba(21,128,61,0.35);
+    }
+
+    .section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .section h2 {
+      margin-bottom: 16px;
+      font-size: 1.8rem;
+    }
+
+    .section p.lead {
+      max-width: 640px;
+      margin: 0 auto;
+      font-size: 1rem;
+      color: #4b5563;
+    }
+
+    .features {
+      max-width: 960px;
+      margin: 30px auto 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 22px;
+    }
+
+    .feature {
+      background: white;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 2px 10px rgba(15,23,42,0.06);
+      text-align: left;
+    }
+
+    .feature h3 {
+      margin-top: 0;
+      margin-bottom: 8px;
+      font-size: 1.05rem;
+    }
+
+    .feature p {
+      margin: 0;
+      font-size: 0.95rem;
+      color: #4b5563;
+      line-height: 1.5;
+    }
+
+    .how-it-works {
+      max-width: 640px;
+      margin: 0 auto;
+      text-align: left;
+      font-size: 0.98rem;
+      color: #4b5563;
+      line-height: 1.6;
+    }
+
+    .how-it-works ol {
+      padding-left: 20px;
+      margin: 10px 0 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: #6b7280;
+      font-size: 0.85rem;
+      border-top: 1px solid #e5e7eb;
+      background: #ffffff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="tagline-pill">Fixtures • TV Guide • Irish times</div>
+    <h1>MatchDay</h1>
+    <p>
+      The fixtures &amp; TV scheduling app built for Irish sports fans.
+      See who’s playing today, what time it kicks off in Ireland, and exactly
+      where to watch on TV or streaming.
+    </p>
+    <!-- Replace # with your real App Store URL -->
+    <a href="#" class="cta-button">Download on the App Store</a>
+  </header>
+
+  <section class="section">
+    <h2>Made for Irish Matchdays</h2>
+    <p class="lead">
+      Stop hunting through websites and channels. MatchDay brings today’s games
+      and TV info into one clean view – from football and rugby to GAA and more.
+    </p>
+
+    <div class="features">
+      <div class="feature">
+        <h3>📅 All today’s fixtures in one place</h3>
+        <p>
+          Scroll through the day’s schedule at a glance, filtered for the
+          competitions that matter to Irish fans.
+        </p>
+      </div>
+
+      <div class="feature">
+        <h3>📺 TV &amp; streaming info</h3>
+        <p>
+          See the exact channel or streaming service for each game so you never
+          miss a kick-off again.
+        </p>
+      </div>
+
+      <div class="feature">
+        <h3>🇮🇪 Local kick-off times</h3>
+        <p>
+          All fixtures displayed in Irish time so there’s no confusion when
+          games are played abroad.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>How It Works</h2>
+    <div class="how-it-works">
+      <p>MatchDay keeps your match schedule simple:</p>
+      <ol>
+        <li>Open the app to see today’s fixtures at a glance.</li>
+        <li>Tap a game to view kick-off time and TV / streaming details.</li>
+        <li>Plan your day around the matches that matter to you.</li>
+      </ol>
+    </div>
+  </section>
+
+  <footer>
+    © <span id="year"></span> MatchDay • Fixtures &amp; TV Guide
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
