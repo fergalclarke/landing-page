@@ -317,6 +317,15 @@ body {
     margin: 0;
 }
 
+/* Widgets Download Section */
+.widgets-download {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    padding-top: 2rem;
+}
+
 /* Animations */
 @keyframes fadeInUp {
     from {
