@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .ball-bg { fill: #ffffff; }
+      .ball-line { fill: #222222; }
+    </style>
+  </defs>
+  <!-- Outer circle -->
+  <circle cx="32" cy="32" r="30" class="ball-bg" />
+  <!-- Simple football pattern -->
+  <path class="ball-line" d="M32 10 23 18l3 11h12l3-11z" />
+  <path class="ball-line" d="M23 18 14 24l2 11 10 7 3-11z" />
+  <path class="ball-line" d="M41 18 50 24l-2 11-10 7-3-11z" />
+  <path class="ball-line" d="M25 40 22 51l10 3 10-3-3-11z" />
+  <!-- Outline -->
+  <circle cx="32" cy="32" r="30" fill="none" stroke="#222222" stroke-width="2" />
+</svg>
+
+
